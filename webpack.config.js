@@ -5,7 +5,7 @@ module.exports = {
   entry: [
     './node_modules/bootstrap/dist/css/bootstrap.css',
     './src/css/main.css',
-    './src/js/main.js'
+    './src/js/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
