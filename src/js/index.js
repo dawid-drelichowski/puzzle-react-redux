@@ -1,3 +1,3 @@
-import Application from 'Application';
+import App from 'App';
 
-new Application();
+new App();
