@@ -6,9 +6,6 @@ export default class extends React.Component {
     piecesOrder: PropTypes.arrayOf(PropTypes.number).isRequired,
     onDragStart: PropTypes.func.isRequired
   };
-  static defaultProps = {
-    onDragStart: () => {}
-  };
   onDragStart(event) {
     event.dataTransfer.effectAllowed = 'move';
     //event.dataTransfer.dropEffect = 'move';
@@ -18,7 +15,7 @@ export default class extends React.Component {
     return <div className="col-lg-5 label label-danger">
       <ul className="grid label-danger" onDragStart={event => this.onDragStart(event)}>
         {this.props.piecesOrder.map((value, index) => {
-          return <Item key={index} field={value}/>
+          return <Item key={index} field={value} />
         })}
       </ul>
     </div>
