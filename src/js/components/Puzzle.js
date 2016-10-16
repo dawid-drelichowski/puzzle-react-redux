@@ -1,17 +1,17 @@
-import React from 'react';
-import StatusView from 'components/Status';
-import DraggZoneView from 'components/DraggZone';
-import DropZoneView from 'components/DropZone';
+import React, {PropTypes} from 'react';
+import Status from 'containers/Status';
+import DragZone from 'containers/Drag/Zone';
+import DropZone from 'components/Drop/Zone';
 
 export default class extends React.Component {
-  static propTypes = {piecesOrder: React.PropTypes.arrayOf(React.PropTypes.number).isRequired};
+  static propTypes = {piecesOrder: PropTypes.arrayOf(PropTypes.number).isRequired};
   render() {
     const piecesOrder = this.props.piecesOrder;
 
     return <div className="row">
-      <DropZoneView piecesCount={piecesOrder.length} />
-      <StatusView piecesCount={piecesOrder.length} />
-      <DraggZoneView piecesOrder={piecesOrder} />
+      <DropZone piecesCount={piecesOrder.length} />
+      <Status />
+      <DragZone piecesOrder={piecesOrder} />
     </div>;
   }
 }
