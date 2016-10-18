@@ -8,10 +8,13 @@ export default class extends React.Component {
     onDragEnd: PropTypes.func.isRequired
   };
   onDragStart(event) {
-    const target = event.target;
+    const target = event.target,
+      dataTransfer = event.dataTransfer;
 
-    event.dataTransfer.effectAllowed = 'move';
-    //event.dataTransfer.dropEffect = 'move';
+    dataTransfer.effectAllowed = 'move';
+    dataTransfer.dropEffect = 'move';
+    dataTransfer.setData('text', '1'); //Firefox effectAllowed and dropEffect bug fix
+
     target.classList.add('draggable-current');
     this.props.onDragStart(this.getFieldFromElement(target));
   }
