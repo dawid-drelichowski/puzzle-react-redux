@@ -1,7 +1,9 @@
-var path = require('path'),
-  ExtractTextPlugin = require('extract-text-webpack-plugin');
+import webpack from 'webpack';
+import path from 'path';
+import process from 'process';
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
-module.exports = {
+export default {
   entry: [
     './node_modules/bootstrap/dist/css/bootstrap.css',
     './src/css/main.css',
@@ -21,7 +23,18 @@ module.exports = {
       {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}
     ]
   },
-  plugins: [
-    new ExtractTextPlugin('css/[name].css')
-  ]
+  plugins: (() => {
+    const plugins = [
+      new ExtractTextPlugin('css/[name].css')
+    ];
+
+    if (process.argv.indexOf('-p') !== -1) {
+      plugins.push(new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: `'production'`
+        }
+      }));
+    }
+    return plugins;
+  })()
 };
