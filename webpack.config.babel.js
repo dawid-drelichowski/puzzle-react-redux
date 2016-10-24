@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import process from 'process';
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
   entry: [
