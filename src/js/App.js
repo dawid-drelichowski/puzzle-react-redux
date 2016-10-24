@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
 import Puzzle from 'containers/Puzzle';
 import reducer from 'reducers/index';
 
@@ -19,6 +19,6 @@ export default class {
         <Puzzle piecesCount={piecesOrder.length}/>
       </Provider>,
       document.getElementById('puzzle')
-    )
+    );
   }
 }

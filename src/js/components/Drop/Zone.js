@@ -11,7 +11,7 @@ export default class extends React.Component {
     return <div className="col-lg-5 label label-success">
       <ul className="grid label-success">
         {pieces.map((value, index) => {
-          return <Item key={index} field={index + 1} />
+          return <Item key={index} field={index + 1} />;
         })}
       </ul>
     </div>;

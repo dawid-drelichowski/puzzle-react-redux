@@ -21,7 +21,7 @@ export default class extends React.Component {
       this.setState({dropped: true});
       this.props.onDrop(this.props.field);
     }
-   }
+  }
   render() {
     let props = {};
 

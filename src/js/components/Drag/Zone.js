@@ -32,10 +32,10 @@ export default class extends React.Component {
         onDragEnd={event => this.onDragEnd(event)}
       >
         {this.props.piecesOrder.map((value, index) => {
-          return <Item key={index} field={value} />
+          return <Item key={index} field={value} />;
         })}
       </ul>
-    </div>
+    </div>;
   }
   getFieldFromElement(element) {
     return parseInt(element.dataset.field, 10);

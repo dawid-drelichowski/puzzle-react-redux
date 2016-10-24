@@ -6,6 +6,6 @@ export default class extends React.Component {
   };
   render() {
     const props = this.props;
-    return <li draggable="true" data-field={props.field}/>
+    return <li draggable="true" data-field={props.field}/>;
   }
 }

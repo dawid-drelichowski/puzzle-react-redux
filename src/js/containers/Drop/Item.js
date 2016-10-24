@@ -1,4 +1,4 @@
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
 import Creators from 'actions/index';
 import Item from 'components/Drop/Item';
 
@@ -11,6 +11,6 @@ export default connect(
       onDrop: index => {
         dispatch(Creators.dropped(index));
       }
-    }
+    };
   }
 )(Item);
