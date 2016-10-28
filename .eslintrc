@@ -69,7 +69,6 @@
     "no-self-compare": 2,
     "no-throw-literal": 2,
     "no-useless-call": 2,
-    "no-void": 2,
     "no-with": 2,
     "radix": 2,
     "vars-on-top": 2,
