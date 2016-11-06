@@ -1,0 +1,23 @@
+exports[`Status component should show "Done" when no pieces left 1`] = `
+<div
+  className="status col-lg-2">
+  <div
+    className="alert label-success text-white">
+    ✔ Done!
+  </div>
+</div>
+`;
+
+exports[`Status component should show pieces left 1`] = `
+<div
+  className="status col-lg-2">
+  <div
+    className="alert label-warning text-white">
+    Left: 
+    <span
+      className="badge">
+      9
+    </span>
+  </div>
+</div>
+`;
