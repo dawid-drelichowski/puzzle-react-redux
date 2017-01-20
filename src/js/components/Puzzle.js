@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import Status from 'components/Status';
 import DragZone from 'containers/Drag/Zone';
-import DropZone from 'components/Drop/Zone';
+import DropZone from 'containers/Drop/Zone';
 
 export default class extends React.Component {
   static propTypes = {

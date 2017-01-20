@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import Creators from 'actions/index';
-import Item from 'components/Drop/Item';
+import Zone from 'components/Drop/Zone';
 
 export default connect(
   state => {
@@ -13,4 +13,4 @@ export default connect(
       }
     };
   }
-)(Item);
+)(Zone);

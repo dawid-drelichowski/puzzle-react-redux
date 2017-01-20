@@ -1,0 +1,28 @@
+exports[`Drag zone component should has 6 items 1`] = `
+<div
+  className="col-lg-5 label label-danger">
+  <ul
+    className="grid label-danger"
+    onDragEnd={[Function]}
+    onDragStart={[Function]}>
+    <li
+      data-field={3}
+      draggable="true" />
+    <li
+      data-field={2}
+      draggable="true" />
+    <li
+      data-field={6}
+      draggable="true" />
+    <li
+      data-field={1}
+      draggable="true" />
+    <li
+      data-field={5}
+      draggable="true" />
+    <li
+      data-field={4}
+      draggable="true" />
+  </ul>
+</div>
+`;
