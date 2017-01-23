@@ -9,7 +9,11 @@ describe('Drag zone component', () => {
     );
   }
 
-  it('should has 6 items', () => {
-    expect(getComponent([3, 2, 6, 1, 5, 4]).toJSON()).toMatchSnapshot();
+  it('should has 3 items', () => {
+    expect(getComponent([3, 1, 2]).toJSON()).toMatchSnapshot();
+  });
+
+  it('should has 5 items', () => {
+    expect(getComponent([3, 2, 1, 5, 4]).toJSON()).toMatchSnapshot();
   });
 });

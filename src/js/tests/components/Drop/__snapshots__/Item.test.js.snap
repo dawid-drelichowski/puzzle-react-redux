@@ -1,0 +1,19 @@
+exports[`Drop item component should be 2nd item dropped 1`] = `
+<li
+  data-field={2} />
+`;
+
+exports[`Drop item component should be 2nd item not dropped 1`] = `
+<li
+  data-valid={2} />
+`;
+
+exports[`Drop item component should be 4th item dropped 1`] = `
+<li
+  data-field={4} />
+`;
+
+exports[`Drop item component should be 4th item not dropped 1`] = `
+<li
+  data-valid={4} />
+`;
