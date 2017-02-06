@@ -14,11 +14,11 @@ export default {
     filename: 'js/[name].js'
   },
   resolve: {
-    root: [path.join(__dirname, 'src/js')]
+    modules: [path.join(__dirname, 'src/js'), 'node_modules']
   },
   module: {
-    loaders: [
-      {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
+    rules: [
+      {test: /\.css$/, use: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})},
       {test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=1000000&name=[ext]/[name].[ext]'},
       {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}
     ]
