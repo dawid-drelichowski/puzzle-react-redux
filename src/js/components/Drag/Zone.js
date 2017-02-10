@@ -7,7 +7,7 @@ export default class extends React.Component {
     onDragStart: PropTypes.func.isRequired,
     onDragEnd: PropTypes.func.isRequired
   };
-  onDragStart(event) {
+  onDragStart = (event) => {
     const target = event.target,
       dataTransfer = event.dataTransfer;
 
@@ -17,19 +17,19 @@ export default class extends React.Component {
 
     target.classList.add('draggable-current');
     this.props.onDragStart(this.getFieldFromElement(target));
-  }
-  onDragEnd(event) {
+  };
+  onDragEnd = (event) => {
     const target = event.target;
 
     target.classList.remove('draggable-current');
     this.props.onDragEnd(this.getFieldFromElement(target));
-  }
+  };
   render() {
     return <div className="col-lg-5 label label-danger">
       <ul
         className="grid label-danger"
-        onDragStart={event => this.onDragStart(event)}
-        onDragEnd={event => this.onDragEnd(event)}
+        onDragStart={this.onDragStart}
+        onDragEnd={this.onDragEnd}
       >
         {this.props.piecesOrder.map((value, index) => {
           return <Item key={index} field={value} />;
@@ -38,6 +38,6 @@ export default class extends React.Component {
     </div>;
   }
   getFieldFromElement(element) {
-    return parseInt(element.dataset.field, 10);
+    return parseInt(element.getAttribute('data-field'), 10);
   }
 }

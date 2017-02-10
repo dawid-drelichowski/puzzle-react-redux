@@ -51,7 +51,6 @@
     "no-extra-bind": 2,
     "no-implicit-coercion": 2,
     "no-implied-eval": 2,
-    "no-invalid-this": 2,
     "no-iterator": 2,
     "no-labels": 2,
     "no-lone-blocks": 2,
@@ -119,6 +118,7 @@
     "space-unary-ops": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/jsx-no-undef": 2
+    "react/jsx-no-undef": 2,
+    "react/jsx-no-bind": 2
   }
 }

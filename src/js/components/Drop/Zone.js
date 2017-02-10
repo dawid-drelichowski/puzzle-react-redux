@@ -10,16 +10,12 @@ export default class extends React.Component {
   static defaultProps = {
     currentlyDragged: 0
   };
-  constructor(props) {
-    super(props);
-    this.state = {dropped: new Array(this.props.piecesCount).fill(false)};
-  }
-  onDragOver(event) {
+  onDragOver = (event) => {
     if (this.isValidDragElement(event.target)) {
       event.preventDefault();
     }
-  }
-  onDrop(event) {
+  };
+  onDrop = (event) => {
     if (this.isValidDragElement(event.target)) {
       const dropped = this.state.dropped.slice();
       dropped[this.props.currentlyDragged - 1] = true;
@@ -27,13 +23,17 @@ export default class extends React.Component {
       event.preventDefault();
       this.props.onDrop(this.props.currentlyDragged);
     }
+  };
+  constructor(props) {
+    super(props);
+    this.state = {dropped: new Array(this.props.piecesCount).fill(false)};
   }
   render() {
     return <div className="col-lg-5 label label-success">
       <ul
         className="grid label-success"
-        onDragOver={event => this.onDragOver(event)}
-        onDrop={event => this.onDrop(event)}
+        onDragOver={this.onDragOver}
+        onDrop={this.onDrop}
       >
         {this.state.dropped.map((value, index) => {
           return <Item key={index} field={index + 1} dropped={value}/>;
@@ -45,6 +45,6 @@ export default class extends React.Component {
     return this.getValidFromElement(dragged) === this.props.currentlyDragged;
   }
   getValidFromElement(element) {
-    return parseInt(element.dataset.valid, 10);
+    return parseInt(element.getAttribute('data-valid'), 10);
   }
 }

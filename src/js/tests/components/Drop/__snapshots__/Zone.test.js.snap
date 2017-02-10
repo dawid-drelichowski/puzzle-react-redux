@@ -1,4 +1,4 @@
-exports[`Drop zone component should has 2 items 1`] = `
+exports[`Drop zone component should have 2 items 1`] = `
 <div
   className="col-lg-5 label label-success">
   <ul
@@ -13,7 +13,7 @@ exports[`Drop zone component should has 2 items 1`] = `
 </div>
 `;
 
-exports[`Drop zone component should has 4 items 1`] = `
+exports[`Drop zone component should have 4 items 1`] = `
 <div
   className="col-lg-5 label label-success">
   <ul
