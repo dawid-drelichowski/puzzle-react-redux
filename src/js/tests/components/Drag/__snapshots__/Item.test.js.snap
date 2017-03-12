@@ -1,11 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Drag item component should be 3rd item 1`] = `
 <li
   data-field={3}
-  draggable="true" />
+  draggable="true"
+/>
 `;
 
 exports[`Drag item component should be 5th item 1`] = `
 <li
   data-field={5}
-  draggable="true" />
+  draggable="true"
+/>
 `;

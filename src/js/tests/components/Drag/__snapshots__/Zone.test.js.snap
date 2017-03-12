@@ -1,45 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Drag zone component should have 3 items 1`] = `
 <div
-  className="col-lg-5 label label-danger">
+  className="col-lg-5 label label-danger"
+>
   <ul
     className="grid label-danger"
     onDragEnd={[Function]}
-    onDragStart={[Function]}>
+    onDragStart={[Function]}
+  >
     <li
       data-field={3}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={1}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={2}
-      draggable="true" />
+      draggable="true"
+    />
   </ul>
 </div>
 `;
 
 exports[`Drag zone component should have 5 items 1`] = `
 <div
-  className="col-lg-5 label label-danger">
+  className="col-lg-5 label label-danger"
+>
   <ul
     className="grid label-danger"
     onDragEnd={[Function]}
-    onDragStart={[Function]}>
+    onDragStart={[Function]}
+  >
     <li
       data-field={3}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={2}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={1}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={5}
-      draggable="true" />
+      draggable="true"
+    />
     <li
       data-field={4}
-      draggable="true" />
+      draggable="true"
+    />
   </ul>
 </div>
 `;

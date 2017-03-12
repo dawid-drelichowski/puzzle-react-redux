@@ -1,33 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Drop zone component should have 2 items 1`] = `
 <div
-  className="col-lg-5 label label-success">
+  className="col-lg-5 label label-success"
+>
   <ul
     className="grid label-success"
     onDragOver={[Function]}
-    onDrop={[Function]}>
+    onDrop={[Function]}
+  >
     <li
-      data-valid={1} />
+      data-valid={1}
+    />
     <li
-      data-valid={2} />
+      data-valid={2}
+    />
   </ul>
 </div>
 `;
 
 exports[`Drop zone component should have 4 items 1`] = `
 <div
-  className="col-lg-5 label label-success">
+  className="col-lg-5 label label-success"
+>
   <ul
     className="grid label-success"
     onDragOver={[Function]}
-    onDrop={[Function]}>
+    onDrop={[Function]}
+  >
     <li
-      data-valid={1} />
+      data-valid={1}
+    />
     <li
-      data-valid={2} />
+      data-valid={2}
+    />
     <li
-      data-valid={3} />
+      data-valid={3}
+    />
     <li
-      data-valid={4} />
+      data-valid={4}
+    />
   </ul>
 </div>
 `;
