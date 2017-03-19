@@ -16,10 +16,11 @@
     "url": "https://github.com/dawid-drelichowski/puzzle-react-redux.git"
   },
   "scripts": {
-    "test": "jest",
+    "build": "webpack -p",
+    "build:dev": "webpack -d",
     "lint": "eslint src/js/. *.js",
-    "build" : "webpack -p",
-    "build:dev" : "webpack -d"
+    "test": "jest",
+    "watch": "webpack --watch --progress --hide-modules"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
