@@ -33,7 +33,7 @@ Minified version of assets can be build with `npm run build`.
 
 ## NPM scripts
 
-Available [NPM](https://www.npmjs.com/ scripts:
+Available [NPM](https://www.npmjs.com/) scripts:
 
 * `npm run build` combine related scripts/styles and minimizes them with [Webpack](https://webpack.github.io/).
 * `npm run build:dev` combine related scripts/styles with [Webpack](https://webpack.github.io/).
