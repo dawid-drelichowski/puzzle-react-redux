@@ -1,4 +1,4 @@
-# Puzzle based on React and Redux [![Build Status](https://travis-ci.org/dawid-drelichowski/puzzle-react-redux.svg?branch=master)](https://travis-ci.org/dawid-drelichowski/puzzle-react-redux) [![bitHound Overall Score](https://www.bithound.io/github/dawid-drelichowski/puzzle-react-redux/badges/score.svg)](https://www.bithound.io/github/dawid-drelichowski/puzzle-react-redux)
+# Puzzle based on React and Redux [![Build Status](https://travis-ci.org/dawid-drelichowski/puzzle-react-redux.svg?branch=master)](https://travis-ci.org/dawid-drelichowski/puzzle-react-redux) [![bitHound Overall Score](https://www.bithound.io/github/dawid-drelichowski/puzzle-react-redux/badges/score.svg)](https://www.bithound.io/github/dawid-drelichowski/puzzle-react-redux) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 Simple drag and drop puzzle game which uses native HTML 5 drag and drop feature, based on [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/).
 
